@@ -4,9 +4,9 @@
       <h1>Todo App</h1>
     </div>
     <div class="row d-flex align-items-center justify-content-center app-main">
-      <CompletedTodos></CompletedTodos>
       <GetTodo></GetTodo>
       <CurrentTodos></CurrentTodos>      
+      <CompletedTodos></CompletedTodos>
     </div>
   </div>
 </template>

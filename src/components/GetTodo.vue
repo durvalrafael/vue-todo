@@ -6,7 +6,7 @@
                :value="newTodo"
                @change="getTodo"
                placeholder="Adicionar uma tarefa" required>
-            <div class="input-group-prepend">
+            <div class="btn-group">
                 <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
                 <button class="btn btn-primary" @click="addTodo">Adicionar</button>
             </div>

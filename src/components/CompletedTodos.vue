@@ -1,12 +1,14 @@
 <template>
-    <div id="completed-todos">
+    <div id="completed-todos" class="container"> 
         <h3 v-if="completed.length > 0">Finalizadas ({{completed.length}})</h3>
         <ul class="list-group">
             <li class="list-group-item" v-for="todo in completed">
                 {{todo.body}}
-                <button type="button" @click="remove(todo)" class="btn btn-default btn-sm">
-                <span class="glyphicon glyphicon-remove-circle"></span> Apagar
+                <div class="btn-group">
+                <button type="button" @click="remove(todo)" class="btn btn-default btn-sm btn-outline-danger">
+                <i class="fas fa-minus-circle"></i>
                 </button>
+                </div>
             </li>
         </ul>
 
@@ -27,3 +29,8 @@
         }
     }
 </script>
+<style scoped>
+    .list-group-item{
+        text-decoration: line-through;    
+    }
+</style>
