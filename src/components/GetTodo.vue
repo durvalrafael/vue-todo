@@ -1,14 +1,15 @@
 <template>
     
     <div id="get-todo" class="container">
+        
         <div class="input-group mb-3">
             <input class="form-control"
                :value="newTodo"
                @change="getTodo"
                placeholder="Adicionar uma tarefa" required>
-            <div class="btn-group">
+            <div class="input-group-append">
                 <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
-                <button class="btn btn-primary" @click="addTodo">Adicionar</button>
+                <button class="btn btn-outline-light" @click="addTodo">Adicionar</button>
             </div>
         </div>        
     </div>

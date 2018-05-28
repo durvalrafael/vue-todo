@@ -34,3 +34,28 @@ body {
   /* height: 100vh; */
 }
 </style>
+
+<style lang="scss">
+body.app{
+  background: rebeccapurple;  
+  h1,h2,h3,h4,h5{
+    color: white;
+  }
+  .list-group-item{
+      color: white;
+      background-color: #330e58;  
+  }
+  .form-control{
+    background-color: #340e57;
+    border: 1px solid #340e57;
+    color: #FFFFFF;    
+    &::-webkit-input-placeholder {
+      color:white;
+    }
+  }
+  .app-header {
+      color: white;
+  }  
+}
+</style>
+
