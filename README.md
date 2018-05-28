@@ -12,3 +12,10 @@ npm run serve
 ``` sh
 npm run build
 ```
+
+### Test
+``` sh
+npm run test:unit
+npm run test:e2e
+```
+
