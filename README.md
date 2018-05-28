@@ -1,10 +1,12 @@
 
 ## Quickstart
 
+### Serve
 ``` sh
-npm install -g @vue/cli
-# or
-yarn global add @vue/cli
+npm run serve
+```
 
-vue create my-project
+### Build
+``` sh
+npm run build
 ```
