@@ -1,27 +1,36 @@
 <template>
-  <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
-    <Todo/>
+  <div id="app" class="container-fluid">
+    <div class="row d-flex align-items-center justify-content-center app-header">
+      <h1>Todo App</h1>
+    </div>
+    <div class="row d-flex align-items-center justify-content-center app-main">
+      <CompletedTodos></CompletedTodos>
+      <GetTodo></GetTodo>
+      <CurrentTodos></CurrentTodos>      
+    </div>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue';
-import Todo from './components/Todo.vue';
-
+import GetTodo from './components/GetTodo.vue'
+import CurrentTodos from './components/CurrentTodos.vue'
+import CompletedTodos from './components/CompletedTodos.vue'
 export default {
-  name: 'app',
   components: {
-    // HelloWorld,
-    Todo,
-  },
-};
+    GetTodo,
+    CurrentTodos,
+    CompletedTodos
+  }
+ 
+}
 </script>
 
-<style lang="scss">
-#app {
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style scoped>
+body {
+  font-family: Raleway, Helvetica, sans-serif;
+}
+.app-main{
+  padding-top: 20px;
+  /* height: 100vh; */
 }
 </style>
